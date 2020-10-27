@@ -68,8 +68,10 @@ const showWork = () => {
     ({ name, image, live, source }) =>
     (output += `
             <div class="work-item">
-                <img src=${image} alt="image" class="work-item-img">
-                <div class="work-details">
+                <div class="work-side work-front">
+                    <img src=${image} alt="image" class="work-item-img">
+                </div>
+                <div class="work-side work-details">
                     <p>${name}</p>
                     <div class="work-links">
                         <a href=${live} title="Live link" target="_blank"><i class='bx bx-link-external work-icon'></i></a>
@@ -151,3 +153,4 @@ function saveMessage(name, email, message){
 /*===== UPDATE THE ELEMENT TO CURRENT YEAR =====*/
 // Update the element to the current year //
 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
+
