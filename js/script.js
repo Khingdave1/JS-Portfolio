@@ -74,7 +74,7 @@ const showWork = () => {
                 <div class="work-side work-details">
                     <p>${name}</p>
                     <div class="work-links">
-                        <a href=${live} title="Live link" target="_blank"><i class='bx bx-link-external work-icon'></i></a>
+                        <a href=${live} title="Live link" target="_blank"><i class='bx bx-link work-icon'></i></a>
                         <a href=${source} title="Source code" target="_blank"><i class='bx bx-code work-icon'></i></a>
                     </div>
                 </div>
