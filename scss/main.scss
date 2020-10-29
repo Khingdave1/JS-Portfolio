@@ -34,7 +34,9 @@ body {
     color: $secondary-color;
     background-color: $white-color;
     position: relative;
+    
 }
+
 // Dark mode start
 .dark-mode {
     background-color: $dark-sec-color;
@@ -64,11 +66,10 @@ body {
     padding: .75rem 2.5rem;
     font-weight: $font-semi;
     border-radius: $border-radius;
-    transform: translateY(0);
-    transition: transform 0.2s ease-in;
     letter-spacing: 3px;
+    transition: background-color 250ms;
     &:hover {
-        transform: translateY(-3px);
+        background-color: darken($primary-color, 6);
     }
 }
 .sect-heading h2 {
@@ -94,6 +95,10 @@ body {
 }
 .grid {
     padding: 64px 10%;
+    @media screen and (min-width: 2000px) {
+        width: 2000px;
+        margin: 0 auto;
+    }
 }
 // General ends
 
