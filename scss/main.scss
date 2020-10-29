@@ -37,13 +37,13 @@ body {
 }
 // Dark mode start
 .dark-mode {
-    background-color: $dark-sec-color !important;
+    background-color: $dark-sec-color;
     color: $white-color;
 }
 @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
     body {
-        background-color: $dark-sec-color !important;
+        background-color: $dark-sec-color;
         color: $white-color;
     }
     .light-mode {
